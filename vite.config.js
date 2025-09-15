@@ -3,5 +3,5 @@ import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [tailwindcss()],
-  base : "/test_TD"
+  base : "/R3.12-TD5"
 });
