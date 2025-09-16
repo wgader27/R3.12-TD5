@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/src/style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="bg-bg text-fg h-screen">
-      <div>
-        <p >adamkeyes</p>
-        <div class="bg-[url('/Profile/image-profile-mobile.webp')] bg-auto bg-center h-64 w-60">
-          <div class="flex flex-row">
-            <img src="./public/Icons/icon-github.svg" alt="Icon Github">
-            <img src="./public/Icons/icon-frontend-mentor.svg" alt="Icon front end">
-            <img src="./public/Icons/icon-linkedin.svg" alt="">
-            <img src="./public/Icons/icon-twitter.svg" alt="">
-          </div>
-        </div>
-        <h1 class="text-3xl font-bold text-fg">
-          Nice to meet you!  
-          I'm <span class="relative inline-block">
-            <span class="relative z-10">Adam Keyes</span>
-            <span class="bg-green-400 absolute inset-0 h-2 bottom-5 z-0 rounded"></span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/src/style.css" rel="stylesheet" />
+  <title>Site TD5</title>
+</head>
+
+<body class="h-screen">
+  <main class=" bg-bg font-grotesk text-fg p-5">
+    <header class="grid grid-cols-1 grid-rows-1 ">
+      <section class="row-start-1 col-start-1 flex flex-col items-center">
+        <p>adamkeyes</p>
+        <nav class="flex flex-row gap-10">
+          <img src="./public/Icons/icon-github.svg" alt="Icon Github">
+          <img src="./public/Icons/icon-frontend-mentor.svg" alt="Icon front end">
+          <img src="./public/Icons/icon-linkedin.svg" alt="">
+          <img src="./public/Icons/icon-twitter.svg" alt="">
+        </nav>
+      </section>
+      <section class="row-start-1 col-start-1 flex flex-col items-center">
+        <img src="/Profile/image-profile-mobile.webp" alt="">
+        <h1 class="text-4xl font-bold text-fg text-center">
+          Nice to meet you!<br>
+          I'm <span class="border-b-4 border-b-underline">
+            Adam Keyes
           </span>.
-        </h1>          
-      </div>
-    </div>
-  </body>
+        </h1>
+        <p class="text-1xl py-6 px-10 text-center">
+          Based in the UK, I'm a front-end developer passionate about building accessible web apps that users love.
+        </p>
+        <a href="" class="py-3 text-btn border-b-3 border-b-btn">Contact me</a>
+      </section>
+    </header>
+    <footer></footer>
+  </main>
+</body>
+
 </html>
