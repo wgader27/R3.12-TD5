@@ -2,39 +2,42 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-bg : var(--clr-bg);
-  --color-fg : var(--clr-fg);
+  --color-bg: var(--clr-bg);
+  --color-fg: var(--clr-fg);
   --color-underline: var(--clr-green);
-  --color-btn : var(--color-green-300);
-  --font-grotesk : "Space Grotesk",sans-serif;
-};
+  --color-btn: var(--color-green-300);
+  --font-grotesk: "Space Grotesk", sans-serif;
+  --background-image-circle : url('/Pattern/pattern-circle.svg');
+}
+
+;
 
 @layer base {
-  :root{
-
-    --clr-bg:var(--clr-gray-900);
-    --clr-fg:var(--clr-white);
+  :root {
+    --clr-bg: var(--clr-gray-900);
+    --clr-fg: var(--clr-white);
 
     /* Primitive Tokens */
     --clr-white: oklch(1 0 0);
-    
+
     --clr-gray-300: oklch(87.2% 0.01 258.338);
     --clr-gray-400: oklch(70.7% 0.022 261.325);
     --clr-gray-800: oklch(27.8% 0.033 256.848);
     --clr-gray-900: oklch(21% 0.034 264.665);
-    
+
     --clr-green: oklch(87.1% 0.15 154.449);
     --clr-green-300: oklch(79.2% 0.209 151.711);
 
   }
 
-  .light{
-    --clr-bg: var(--clr-white) ;
-    --clr-fg : var(--clr-gray-900);
+  .light {
+    --clr-bg: var(--clr-white);
+    --clr-fg: var(--clr-gray-900);
   }
 
-};
+  
+}
 
 @utility pattern {
-  @apply after:content-[''] after:absolute after:z-10 after:bg-amber-400;
-}
+  @apply relative after:content-[''] after:absolute after:right-15 after:z-10 after:bg-circle after:border-red-600 after:w-300 after:h-300 after:bg-no-repeat;}
+
